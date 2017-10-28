@@ -24,8 +24,9 @@
     a {
       position: relative;
       display: inline-block;
+      height: 34px;
       margin: 0 2px;
-      padding: 5px 10px;
+      padding: 0 10px;
       border: solid 2px #333;
       border-bottom: none;
       -webkit-border-radius: 5px 5px 0 0;
@@ -34,6 +35,7 @@
       color: #333;
       font-weight: bold;
       font-size: 14px;
+      line-height: 34px;
       &.cur {
         background-color: #606060;
         color: #fff;
@@ -41,9 +43,9 @@
           content: '';
           position: absolute;
           left: 0;
-          bottom: -2px;
+          bottom: -3px;
           width: 100%;
-          height: 2px;
+          height: 5px;
           background-color: #606060;
         }
       }
@@ -156,6 +158,7 @@
       ul {
         li {
           display: inline-block;
+          margin: 1px 0;
           padding: 0 8px;
           border-left: solid 1px #666;
           color: #333;
@@ -188,7 +191,8 @@
         }
       }
       .resource_list {
-        overflow-x: scroll;
+        overflow-x: auto;
+        overflow-y: hidden;
         white-space: nowrap;
       }
       .resource_item + .resource_item {
@@ -232,7 +236,7 @@
         left: 0;
         width: 16px;
         height: 16px;
-        background-color: #ccc;
+        background-color: #786d3f;
       }
     }
   }
@@ -297,6 +301,7 @@
     .nav_box {
       float: none;
       overflow-x: auto;
+      overflow-y: hidden;
       white-space: nowrap;
       text-align: left;
       a {
@@ -311,6 +316,9 @@
     }
     .content_box {
       margin-top: 10px;
+      .inner{
+        border: none;
+      }
     }
     .sub_nav_box {
       dl {
@@ -526,13 +534,13 @@
           }, {
             key: "192.168.1.2",
           }, {
-            key: "/var/lib/cruise-agent"
+            key: "/var/lib/cruise"
           }],
           resourceList: ["other11"]
         }, {
           status: true,
           image: "http://placeholder.qiniudn.com/50x50",
-          title: "djaiei.kfjjvi.com",
+          title: "djaiei.kjvi.com",
           otherInfos: [{
             key: "idle222",
           }, {
@@ -544,7 +552,7 @@
         }, {
           status: true,
           image: "http://placeholder.qiniudn.com/50x50",
-          title: "jauejfdl.idnfj.com",
+          title: "jauejfdl.ij.com",
           otherInfos: [{
             key: "idle333",
           }, {

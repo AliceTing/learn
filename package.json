@@ -10,7 +10,13 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "vue": "^2.5.2"
+    "babel-core": "^6.26.0",
+    "eventsource-polyfill": "^0.9.6",
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "shelljs": "^0.7.8",
+    "vue": "^2.5.2",
+    "webpack-hot-middleware": "^2.20.0",
+    "webpack-merge": "^4.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.4",
