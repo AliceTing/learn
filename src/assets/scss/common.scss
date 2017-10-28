@@ -1,0 +1,38 @@
+/**
+ * Created by yuting2 on 2017/10/23.
+ */
+.w {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .w {
+    width:auto;
+    margin: 0 10px;
+  }
+}
+
+.box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin border-radius($radius:3px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-sizing($borderBox:border-box) {
+  -webkit-box-sizing: $borderBox;
+  -moz-box-sizing: $borderBox;
+  box-sizing: $borderBox;
+}
+
+@mixin transition($ele:all,$time:0.3s) {
+  -webkit-transition: $ele $time;
+  -moz-transition: $ele $time;
+  transition: $ele $time;
+}
